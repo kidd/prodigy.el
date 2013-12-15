@@ -68,7 +68,7 @@
 
 (define-derived-mode prodigy-mode special-mode "Prodigy mode"
   "Special mode for prodigy buffers"
-  (put 'funny-mode 'mode-class 'special)
+  (put 'prodigy-mode 'mode-class 'special)
   (prodigy-reset)
   (prodigy-repaint)
   (set (make-local-variable 'revert-buffer-function) 'prodigy-refresh))
